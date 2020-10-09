@@ -13,7 +13,7 @@ Vagrant.configure("2") do |config|
   # Keep the VM as lean as possible
   config.vm.provider "virtualbox" do |vb|
     # Customize the amount of memory on the VM:
-    vb.memory = "1024"
+    vb.memory = "10000"
     vb.cpus = 2
     # Fixes DNS issues on some networks
     vb.customize ["modifyvm", :id, "--natdnshostresolver1", "on"]
